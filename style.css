@@ -2,9 +2,13 @@
 .container {
   max-width: 960px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.1);
   text-align: center;
+  border: 1px solid deepink;
+  background: url("./images/kayak-bkgd.jpg") rgba(0,0,0,0.1) center center no-repeat;
+  background-size: cover;
+
 }
+
 
 .banner_tittle span {
   display: block;
@@ -39,4 +43,27 @@ button {
   font-size: inherit;
   margin: auto;
   display: block;
+}
+
+@media(min-width: 600px) {
+  img {max-width: 30%;
+  }
+}
+
+@media (min-width: 1100px) {
+  img {max-width: 30%;
+  }
+}
+
+.footer {
+  background-color: black;
+  font-size: inherit;
+  font-family: arial;
+  color: white;
+}
+
+.social-links {
+
+
+
 }

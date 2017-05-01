@@ -27,6 +27,7 @@
   text-align: center;
 }
 
+
 img {
   max-width: 100%;
 }
@@ -52,11 +53,13 @@ li {
 li a {
     display: fixed;
     color: white;
-    padding: 10px 12px;
+    padding: 10px;
+    top: -10px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
   }
+
 
 background {
   color: white;
@@ -98,6 +101,7 @@ button {
 
 table {
 border: 1px solid lightgray;
+position: relative;
 }
 
 td{
@@ -127,9 +131,6 @@ text-decoration: none;
   color: white;
 }
 
-.social-links {
-text-align: right;
-top: auto;
-
-
+.sl{
+float: right;
 }

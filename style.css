@@ -1,6 +1,7 @@
 
 .container {
   max-width: 960px;
+  height: 400px;
   margin: 0 auto;
   text-align: center;
   border: 1px solid deepink;
@@ -9,9 +10,21 @@
 
 }
 
+.container-2 {
+  color: white;
+  background-color: black;
+  padding: 1px;
+  font-weight: bold;
+  border-width: inherit;
+  border-left: 50px;
+  margin: inherit;
+  display: block;
+
+}
 
 .banner_tittle span {
   display: block;
+  text-align: center;
 }
 
 img {
@@ -19,13 +32,25 @@ img {
 }
 
 
-.banner {
-  max-width: 100%;
-}
-
 header {
   background-color: black;
   width: inherit;
+}
+
+.navbar {
+  position: absolute;
+  top: 5px;
+  right: 50%;
+  margin-right: -10px;
+}
+
+background {
+  color: white;
+}
+
+h2 {
+  font-family: Pacifico;
+  text-align: center;
 }
 
 
@@ -55,6 +80,32 @@ button {
   }
 }
 
+
+
+table {
+border: 1px solid lightgray;
+}
+
+td{
+  border: 1px solid lightgray;
+}
+th {
+  background-color: lightgray;
+  text-align: center;
+}
+
+
+iframe {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
 .footer {
   background-color: black;
   font-size: inherit;
@@ -63,7 +114,8 @@ button {
 }
 
 .social-links {
-
+text-align: right;
+top: auto;
 
 
 }

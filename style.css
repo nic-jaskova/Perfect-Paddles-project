@@ -13,10 +13,10 @@
 .container-2 {
   color: white;
   background-color: black;
-  padding: 1px;
   font-weight: bold;
-  border-width: inherit;
-  border-left: 50px;
+  width: 450px;
+  height: 25px;
+  text-align: center;
   margin: inherit;
   display: block;
 
@@ -37,12 +37,26 @@ header {
   width: inherit;
 }
 
-.navbar {
-  position: absolute;
-  top: 5px;
-  right: 50%;
-  margin-right: -10px;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+
+li {
+    float: right;
+}
+
+li a {
+    display: fixed;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 
 background {
   color: white;

@@ -1,4 +1,5 @@
 
+
 .container {
   max-width: 960px;
   height: 400px;
@@ -22,11 +23,15 @@
 
 }
 
-.banner_tittle span {
+.banner_tittle {
   display: block;
   text-align: center;
 }
 
+h1 {
+  font-family: Pacifico;
+  text-align: center;
+}
 
 img {
   max-width: 100%;
@@ -35,8 +40,25 @@ img {
 
 header {
   background-color: black;
-  width: inherit;
+  position: fixed;
+  width: 1500px;
+  height: 70px;
 }
+
+.logo {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 30px;
+  left: 0;
+}
+
+.navbar{
+  position: fixed;
+  top: 30px;
+  right: 0;
+}
+
 
 
 ul {
@@ -53,8 +75,7 @@ li {
 li a {
     display: fixed;
     color: white;
-    padding: 10px;
-    top: -10px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -68,6 +89,8 @@ background {
 h2 {
   font-family: Pacifico;
   text-align: center;
+  font-size: 40px;
+  color: gray;
 }
 
 
@@ -87,13 +110,15 @@ button {
   display: block;
 }
 
+/*tablet*/
 @media(min-width: 600px) {
-  img {max-width: 30%;
+  img {max-width: 30%; }
   }
 }
 
+/*desktop*/
 @media (min-width: 1100px) {
-  img {max-width: 30%;
+  img {max-width: 30%; }
   }
 }
 
@@ -101,7 +126,7 @@ button {
 
 table {
 border: 1px solid lightgray;
-position: relative;
+float: right;
 }
 
 td{

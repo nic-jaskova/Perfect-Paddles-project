@@ -2,9 +2,9 @@
 header {
   background-color: black;
   position: fixed;
-  margin: 0;
   width: 100%;
   height: 6.5%;
+  margin: 0 auto;
 }
 
 .logo {
@@ -18,12 +18,12 @@ header {
 
 .navbar{
   position: fixed;
-  top: 30px;
   right: 0;
+  padding: 15px;
 }
 
 
-ul {
+.bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -32,12 +32,12 @@ ul {
     right: 20px;
 }
 
-li {
+.navheader {
     display: inline;
     margin: 5px 5px;
 }
 
-a {
+.about {
     display: fixed;
     color: white;
     font-size: 15px;
@@ -47,10 +47,9 @@ a {
     text-transform: uppercase;
   }
 
-
 .container {
   max-width: 960px;
-  height: 400px;
+  height: 450px;
   margin: 0 auto;
   text-align: center;
   border: 1px solid deepink;
@@ -58,6 +57,30 @@ a {
   background-size: cover;
 
 }
+
+h1 {
+  font-family: Pacifico;
+}
+
+.enjoy {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.outdoors {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.water {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
 
 .container-2 {
   color: white;
@@ -76,10 +99,7 @@ a {
   text-align: center;
 }
 
-h1 {
-  font-family: Pacifico;
-  text-align: center;
-}
+
 
 img {
   max-width: 100%;
@@ -125,11 +145,19 @@ button {
   }
 }
 
+.container-1 {
+  max-width: 960px;
+  height: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
 
+.pricing-list {
+  float: right;
+}
 
 table {
 border: 1px solid lightgray;
-float: right;
 }
 
 td{

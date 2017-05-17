@@ -152,22 +152,46 @@ button {
   text-align: left;
 }
 
+.rentals-description {
+  text-align: left;
+}
+
+.booknow {
+  text-align: left;
+}
+
 .pricing-list {
-  float: right;
+display: flex;
+flex-direction: row-reverse;
 }
 
 table {
-border: 1px solid lightgray;
+border: 1px solid #c8c8c8;
+width: 400px;
 }
 
+.table-headings {
+  text-align: center;
+  background-color: #e6e6e6;
+}
 td{
-  border: 1px solid lightgray;
+  border: 1px solid #c8c8c8;
 }
 th {
-  background-color: lightgray;
+  background-color: #c8c8c8;
+}
+
+.firstcolumn {
+  text-align: left;
+}
+
+.secondcolumn {
   text-align: center;
 }
 
+.thirdcolumn {
+  text-align: center;
+}
 
 iframe {
   margin: auto;
@@ -181,12 +205,31 @@ text-decoration: none;
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  border-color: white;
   background-color: black;
   font-size: inherit;
   font-family: arial;
   color: white;
 }
 
-.sl{
-float: right;
+.copyright {
+  color: white;
+}
+
+.phone {
+  text-decoration: none;
+  color: white;
+  display: inline;
+}
+
+.address {
+  color: darkgray;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row-reverse;
 }

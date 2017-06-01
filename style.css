@@ -1,8 +1,12 @@
+html {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
 
 header {
   background-color: black;
   position: fixed;
-  width: 100%;
   height: 6.5%;
   margin: 0 auto;
 }
@@ -10,15 +14,15 @@ header {
 .logo {
   position: fixed;
   margin: 0;
-  height: 80%;
+  height: 90%;
   top: 20px;
-  left: 20px;
-  padding: 15px;
+  left: 240px;
+  padding: 10px;
 }
 
 .navbar{
   position: fixed;
-  right: 0;
+  right: 500px;
   padding: 15px;
 }
 
@@ -29,7 +33,7 @@ header {
     padding: 0;
     overflow: hidden;
     top: 50px;
-    right: 20px;
+    right: 50px;
 }
 
 .navheader {
@@ -48,9 +52,8 @@ header {
   }
 
 .container {
-  max-width: 960px;
   height: 450px;
-  margin: 0 auto;
+  margin: 0px auto;
   text-align: center;
   border: 1px solid deepink;
   background: url("./images/kayak-bkgd.jpg") rgba(0,0,0,0.1) center center no-repeat;
@@ -105,9 +108,6 @@ img {
   max-width: 100%;
 }
 
-background {
-  color: white;
-}
 
 h2 {
   font-family: Pacifico;
@@ -129,7 +129,8 @@ button {
   color: white;
   text-align: center;
   font-size: inherit;
-  margin: auto;
+  margin-top: 30px;
+  margin-left: 420px;
   display: block;
 }
 
@@ -146,7 +147,7 @@ button {
 }
 
 .container-1 {
-  max-width: 960px;
+  justify-content: center;
   height: 450px;
   margin: 0 auto;
   text-align: left;
@@ -163,6 +164,7 @@ button {
 .pricing-list {
 display: flex;
 flex-direction: row-reverse;
+justify-content: center;
 }
 
 table {
@@ -208,6 +210,7 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  height: 60%;
   border-color: white;
   background-color: black;
   font-size: inherit;
@@ -232,4 +235,5 @@ text-decoration: none;
 .social-links {
   display: flex;
   flex-direction: row-reverse;
+
 }

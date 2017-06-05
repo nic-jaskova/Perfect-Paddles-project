@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 html {
   max-width: 960px;
   margin: 0 auto;
@@ -40,7 +46,7 @@ header {
   position: fixed;
   margin: 0 auto;
   display: block;
-  width: 945px;
+  width: 960px;
   height: 50px;
 }
 
@@ -90,7 +96,7 @@ header {
   border: 1px solid deepink;
   background: url("./images/kayak-bkgd.jpg") rgba(0,0,0,0.1) center center no-repeat;
   background-size: cover;
-  line-height: 25px;
+  line-height: 1.7;
 
 }
 
@@ -128,11 +134,11 @@ header {
 .container-2 {
   color: white;
   background-color: black;
-  opacity: 0.75;
+  opacity: 0.73;
   font-weight: bold;
   justify-content: center;
   vertical-align: middle;
-  line-height: 150%;
+  line-height: 1.5;
   width: 450px;
   height: 25px;
   text-align: center;
@@ -145,7 +151,7 @@ header {
 .banner_tittle {
   display: block;
   text-align: center;
-  line-height: 100%;
+
   align-items: flex-start;
 }
 
@@ -153,8 +159,9 @@ header {
 
 img {
   max-width: 100%;
-
 }
+
+
 
 
 h2 {
@@ -204,7 +211,7 @@ button {
 
 /*desktop*/
 @media only screen and (min-width: 1140px) {
-  img {max-width: 30%; }
+  img {max-width: 30%;}
   }
 }
 
@@ -227,18 +234,13 @@ button {
   text-align: left;
   font-family: Karla, sans-serif;
   line-height: 1.5;
+  border: 10px solid mistyrose;
+  width: 50%;
 }
 
-
-/*.booknow {
-  text-align: left;
-  width: 70%;
-  border-width:thin;
-}*/
-
 .pricing-list {
-float: right;
 display: inline-block;
+border: 10px solid mistyrose;
 }
 
 table {
@@ -269,13 +271,19 @@ th {
   text-align: center;
 }
 
+.location {
+  font-family: Karla, sans-serif;
+  line-height: 2.0;
+  text-align: center;
+}
+
 /*google map*/
 iframe {
   margin: auto;
   display: block;
   text-align: center;
   width: 95%;
-  height: 60%;
+  height: 70%;
 }
 
 a {
@@ -290,24 +298,34 @@ text-decoration: none;
   max-width: 100%;
   height: 60%;
   border-color: white;
-  background-color: black;
+  background-color: #2b2a2a;
   font-size: inherit;
   font-family: arial;
   color: white;
 }
 
+.right-side-footer {
+  justify-content: center;
+}
+
 .copyright {
   color: white;
+  font-family: Karla, sans-serif;
+  line-height: 1.5;
 }
 
 .phone {
   text-decoration: none;
   color: white;
   display: inline;
+  font-family: Karla, sans-serif;
+  line-height: 1.5;
 }
 
 .address {
   color: darkgray;
+  font-family: Karla, sans-serif;
+  line-height: 1.5;
 }
 
 /*unordered list - social links*/
@@ -316,6 +334,7 @@ text-decoration: none;
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  vertical-align: middle;
   /*overflow: hidden;
   top: 50px;
   right: 50px;*/
@@ -329,7 +348,7 @@ i {
 /*social-links container*/
 .social-links {
   display: flex;
-  flex-direction: column-reverse;
   justify-content: flex-end;
-
+  margin-right: 80px;
+  margin-bottom: 100px;
 }

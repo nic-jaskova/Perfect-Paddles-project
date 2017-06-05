@@ -5,7 +5,7 @@
 
 
 html {
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto;
   font-size: 16px;
   font-family: 'karlaregular','pacificoregular';
@@ -46,7 +46,7 @@ header {
   position: fixed;
   margin: 0 auto;
   display: block;
-  width: 960px;
+  width: 1140px;
   height: 50px;
 }
 
@@ -60,7 +60,7 @@ header {
 .navbar{
   position: fixed;
   float: right;
-  right: 250px;
+  right: 150px;
   padding: 15px;
 }
 
@@ -81,6 +81,7 @@ header {
 
 .about {
     display: fixed;
+    font-weight: bold;
     color: white;
     font-size: 15px;
     padding: 10px;
@@ -102,7 +103,7 @@ header {
 
 
 .enjoy {
-  font-family: Karla, sans-serif;
+  font-family: 'karlaregular', sans-serif;
   color: white;
   font-size: 15px;
   text-align: center;
@@ -111,14 +112,14 @@ header {
 }
 
 .outdoors {
-  font-family: Pacifico, sans-serif;
+  font-family: 'pacificoregular', sans-serif;
   color: white;
   font-size: 75px;
   text-align: center;
 }
 
 .water {
-  font-family: Pacifico, sans-serif;
+  font-family: 'pacificoregular', sans-serif;
   color: white;
   font-size: 30px;
   text-align: center;
@@ -155,17 +156,19 @@ header {
   align-items: flex-start;
 }
 
-
-
 img {
   max-width: 100%;
 }
 
+.images {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
 h2 {
-  font-family: Pacifico;
+  font-family: 'pacificoregular';
   text-align: center;
   font-size: 40px;
   color: gray;
@@ -179,7 +182,7 @@ button {
   padding: 11px;
   border-radius: 50px;
   text-decoration: none;
-  font-family: Karla;
+  font-family: 'karlaregular';
   color: white;
   text-align: center;
   font-size: inherit;
@@ -213,7 +216,7 @@ button {
 @media only screen and (min-width: 1140px) {
   img {max-width: 30%;}
   }
-}
+
 
 /*body div*/
 .container-1 {
@@ -226,14 +229,14 @@ button {
 
 /*Description p in the About section*/
 .about-description {
-  font-family: Karla, sans-serif;
+  font-family: 'karlaregular', sans-serif;
   line-height: 2.0;
   text-align: center;
 }
 
 .rentals-description {
   text-align: left;
-  font-family: Karla, sans-serif;
+  font-family: 'karlaregular', sans-serif;
   line-height: 1.5;
   width: 50%;
 }
@@ -273,7 +276,7 @@ th {
 }
 
 .location {
-  font-family: Karla, sans-serif;
+  font-family: 'karlaregular', sans-serif;
   line-height: 2.0;
   text-align: center;
 }
@@ -312,7 +315,7 @@ text-decoration: none;
 
 .copyright {
   color: white;
-  font-family: Karla, sans-serif;
+  font-family: 'karlaregular', sans-serif;
   line-height: 1.5;
 }
 
@@ -320,13 +323,13 @@ text-decoration: none;
   text-decoration: none;
   color: white;
   display: inline;
-  font-family: Karla, sans-serif;
+  font-family: 'karlaregular', sans-serif;
   line-height: 1.5;
 }
 
 .address {
   color: darkgray;
-  font-family: Karla, sans-serif;
+  font-family: 'karlaregular', sans-serif;
   line-height: 1.5;
 }
 

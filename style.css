@@ -1,8 +1,10 @@
 html {
   max-width: 960px;
-  margin: 0px auto;
+  margin: 0 auto;
   font-size: 16px;
+  font-family: 'karlaregular','pacificoregular';
 }
+
 
 @font-face {
     font-family: 'karlaregular';
@@ -28,25 +30,31 @@ html {
     font-style: normal;
 }
 
+background: {
+  color: #e8e5e5;
+}
+
 header {
   background-color: black;
+  background-size: cover;
   position: fixed;
-  height: 6.5%;
   margin: 0 auto;
+  display: block;
+  width: 945px;
+  height: 50px;
 }
 
 .logo {
   position: fixed;
-  margin: 0;
-  height: 90%;
-  top: 20px;
-  left: 240px;
+  justify-content: flex-start;
   padding: 10px;
+  margin-bottom: 100px;
 }
 
 .navbar{
   position: fixed;
-  right: 500px;
+  float: right;
+  right: 250px;
   padding: 15px;
 }
 
@@ -82,54 +90,70 @@ header {
   border: 1px solid deepink;
   background: url("./images/kayak-bkgd.jpg") rgba(0,0,0,0.1) center center no-repeat;
   background-size: cover;
+  line-height: 25px;
 
 }
 
-h1 {
-  font-family: Pacifico;
-}
 
 .enjoy {
+  font-family: Karla, sans-serif;
   color: white;
   font-size: 15px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 23px;
 }
 
 .outdoors {
+  font-family: Pacifico, sans-serif;
   color: white;
-  font-size: 50px;
+  font-size: 75px;
   text-align: center;
 }
 
 .water {
+  font-family: Pacifico, sans-serif;
   color: white;
   font-size: 30px;
   text-align: center;
 }
 
+.container-1 {
+  justify-content: center;
+  height: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
 
 .container-2 {
   color: white;
   background-color: black;
+  opacity: 0.75;
   font-weight: bold;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 150%;
   width: 450px;
   height: 25px;
   text-align: center;
-  margin: inherit;
-  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  background-size: cover;
 
 }
 
 .banner_tittle {
   display: block;
   text-align: center;
+  line-height: 100%;
+  align-items: flex-start;
 }
 
 
 
 img {
   max-width: 100%;
+
 }
 
 
@@ -144,12 +168,11 @@ h2 {
 button {
   background-color: #e2574c;
   color: white;
-  font-weight: bold;
   text-transform: uppercase;
   padding: 11px;
   border-radius: 50px;
   text-decoration: none;
-  font-family: arial;
+  font-family: Karla;
   color: white;
   text-align: center;
   font-size: inherit;
@@ -158,14 +181,29 @@ button {
   display: block;
 }
 
-/*tablet*/
-@media (min-width: 600px) {
-  img {max-width: 30%; }
+ button:hover {
+	box-shadow: 0px 4px 4px rgba(34,62,66,.5);
+	-webkit-transition: box-shadow 1s ease;
+	transition: box-shadow 1s ease;
+}
+
+@media only screen and (min-width: 300px) {
+  .table {
+    width: 100%;
   }
 }
 
+
+/*tablet*/
+@media only screen and (min-width: 600px) {
+  img {max-width: 30%; }
+  header { max-width: 100%}
+  body {max-width: 100%}
+  footer {max-width: 100%}
+}
+
 /*desktop*/
-@media (min-width: 1100px) {
+@media only screen and (min-width: 1140px) {
   img {max-width: 30%; }
   }
 }
@@ -175,20 +213,32 @@ button {
   height: 450px;
   margin: 0 auto;
   text-align: left;
+  background-color: white;
+}
+
+/*Description p in the About section*/
+.about-description {
+  font-family: Karla, sans-serif;
+  line-height: 2.0;
+  text-align: center;
 }
 
 .rentals-description {
   text-align: left;
+  font-family: Karla, sans-serif;
+  line-height: 1.5;
 }
 
-.booknow {
+
+/*.booknow {
   text-align: left;
-}
+  width: 70%;
+  border-width:thin;
+}*/
 
 .pricing-list {
-display: flex;
-flex-direction: row-reverse;
-justify-content: center;
+float: right;
+display: inline-block;
 }
 
 table {
@@ -219,11 +269,13 @@ th {
   text-align: center;
 }
 
+/*google map*/
 iframe {
   margin: auto;
   display: block;
   text-align: center;
-  width: 80%;
+  width: 95%;
+  height: 60%;
 }
 
 a {
@@ -258,9 +310,26 @@ text-decoration: none;
   color: darkgray;
 }
 
+/*unordered list - social links*/
+.sl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  /*overflow: hidden;
+  top: 50px;
+  right: 50px;*/
+}
+
+i {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+/*social-links container*/
 .social-links {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
 
 }

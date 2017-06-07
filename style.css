@@ -13,25 +13,25 @@ html {
 
 
 @font-face {
-    font-family: 'karlaregular';
-    src: url('karla-regular-webfont.woff2') format('woff2'),
-         url('karla-regular-webfont.woff') format('woff');
+    font-family: 'karla';
+    src: url('fonts/karla-regular-webfont.woff2') format('woff2'),
+         url('fonts/karla-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'karlabold';
-    src: url('karla-bold-webfont.woff2') format('woff2'),
-         url('karla-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'karla';
+    src: url('fonts/karla-bold-webfont.woff2') format('woff2'),
+         url('fonts/karla-bold-webfont.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'pacificoregular';
-    src: url('pacifico-webfont.woff2') format('woff2'),
-         url('pacifico-webfont.woff') format('woff');
+    font-family: 'pacifico';
+    src: url('fonts/pacifico-webfont.woff2') format('woff2'),
+         url('fonts/pacifico-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -103,7 +103,7 @@ header {
 
 
 .enjoy {
-  font-family: 'karlaregular', sans-serif;
+  font-family: 'karla', sans-serif;
   color: white;
   font-size: 15px;
   text-align: center;
@@ -112,7 +112,7 @@ header {
 }
 
 .outdoors {
-  font-family: 'pacificoregular', sans-serif;
+  font-family: 'pacifico', sans-serif;
   color: white;
   font-size: 75px;
   text-align: center;
@@ -160,10 +160,10 @@ img {
   max-width: 100%;
 }
 
-.images {
+/*.images {
   display: flex;
   justify-content: space-between;
-}
+}*/
 
 
 
@@ -187,7 +187,7 @@ button {
   text-align: center;
   font-size: inherit;
   margin-top: 30px;
-  margin-left: 420px;
+  margin-left: 500px;
   display: block;
 }
 

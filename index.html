@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Perfect Paddles</title>
+  <head>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Kayak rental, seems to be in Vancouver">
-<meta name="author" content="David Fudge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Perfect Paddles</title>
 
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
+  <meta name="description" content="Kayak rental, seems to be in Vancouver">
+  <meta name="author" content="David Fudge">
 
-<!--Font Awesome via CDN -->
-<script src="https://use.fontawesome.com/4fbf87bab3.js"></script>
+  <link rel="stylesheet" href="reset.css">
 
+  <!--Font Awesome via CDN -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -23,6 +23,7 @@
     <div class="logo">
     <img src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
   </div>
+
 <div class="navbar">
     <nav>
       <ul class="bar">
@@ -46,18 +47,16 @@
         <h1 class="banner_tittle">
           <p class="outdoors">Great Outdoors</p>
           <p class="water">from the water</p>
-    </h1>
+        </h1>
 
         <p class="container-2">Rent our canoes year-around, take a lesson, or join a group tour.</p>
 
 
-        <button type="button" name="Sign me up!"><a href="#">Sign me up!</a></button>
+        <button type="button" id="sign-up" name="Sign me up!"><a href="#">Sign me up!</a></button>
 
     </div>
 
     </div>
-
-
     </section>
 
 
@@ -76,15 +75,15 @@
 
   <br>
   <br>
-<!-- Put images here -->
+<!-- Images -->
+  <article class="images">
+    <img src="images/sunset-kayak.jpg" alt="Sunset kayak">
+    <img src="images/coffee-adventure.jpg" alt="Cup of Coffee">
+    <img src="images/girl-in-kayak.jpg" alt="Girl in kayak">
+  </article>
 
-<img src="images/sunset-kayak.jpg" alt="Sunset kayak">
-<img src="images/coffee-adventure.jpg" alt="Cup of Coffee">
-<img src="images/girl-in-kayak.jpg" alt="Girl in kayak">
-
-
-</div>
-</section>
+  </div>
+  </section>
 
 <!-- Rentals section -->
   <section>
@@ -102,7 +101,7 @@
     </div>
 
   <!-- </div> -->
-</div>
+
 
 
 <!-- Pricing Table -->
@@ -140,6 +139,7 @@
   </table>
 </div>
 </div>
+</div>
   </section>
 
 <!-- Location section -->
@@ -148,7 +148,7 @@
 
     <h2>location</h2>
     <div class="location"
-      <p >Come visit us at our location on Cornwall Avenue and Yew Street in Vancouver:</p>
+      <p>Come visit us at our location on Cornwall Avenue and Yew Street in Vancouver:</p>
     </div>
       <br>
 
@@ -164,6 +164,7 @@
 
     <div class="footer">
 
+      <div class="right-side-footer">
       <div class="copyright">
         <p>©2016 Perfect Paddles Kayak Co.</p>
         <p>Powered by HTML and CSS.</p>
@@ -175,7 +176,7 @@
         <p><a href="tel:+1604-604-6040">604-604-6040.</a>
         <a style="text-decoration:underline" href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a></p>
       </div>
-
+    </div>
       <br>
 
       <div class="address">
@@ -199,6 +200,7 @@
 
     </footer>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="index.js"></script>
   </body>
 </html>

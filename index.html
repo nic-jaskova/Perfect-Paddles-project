@@ -1,111 +1,82 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Perfect Paddles</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Perfect Paddles</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Kayak rental, seems to be in Vancouver">
+    <meta name="author" content="David Fudge">
 
-  <meta name="description" content="Kayak rental, seems to be in Vancouver">
-  <meta name="author" content="David Fudge">
-
-  <link rel="stylesheet" href="reset.css">
-
-  <!--Font Awesome via CDN -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="reset.css">
+    <!--Font Awesome via CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body">
 
   <header>
-    <div class="logo">
-    <img src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
-  </div>
 
-<div class="navbar">
+    <img src="images/perfect-paddles-logo.svg" alt="Perfect Paddles logo">
+
     <nav>
       <ul class="bar">
         <li class="navheader"><a class="about" href="#about">About</a></li>
         <li class="navheader"><a class="about" href="#rentals">Rentals</a></li>
         <li class="navheader"><a class="about" href="#location">Location</a></li>
-
       </ul>
     </nav>
-  </div>
-  </header>
+    </header>
+
+
 
     <section class="banner">
-      <div class="container">
-        <div class="banner_text">
-
-
-        <br>
-          <p class="enjoy">Enjoy the</p>
+      <!-- <div class="container"> -->
 
         <h1 class="banner_tittle">
+          <p class="enjoy">Enjoy the</p>
           <p class="outdoors">Great Outdoors</p>
           <p class="water">from the water</p>
         </h1>
 
         <p class="container-2">Rent our canoes year-around, take a lesson, or join a group tour.</p>
 
+        <button type="button" name="Sign me up!"><a href="#">Sign me up!</a></button>
 
-        <button type="button" id="sign-up" name="Sign me up!"><a href="#">Sign me up!</a></button>
-
-    </div>
-
-    </div>
+    <!-- </div> -->
     </section>
 
 
-<main>
+<main class="mainContent">
 
   <!-- About section -->
-  <section>
-    <div class="container-1">
+
+  <section class="aboutContent">
     <h2>About</h2>
 
-  <div class="about-description">
     <p>
       Perfect Paddles Kayak Rentals Co. offers you the unique opportunity to experience the great <br> outdoors in one of our single or double kayaks.  We cater to all skill levels and abilities, and offer,<br> a variety of lessons and tours too.
     </p>
-  </div>
 
-  <br>
-  <br>
-<!-- Images -->
-  <article class="images">
+<!-- About images -->
     <img src="images/sunset-kayak.jpg" alt="Sunset kayak">
     <img src="images/coffee-adventure.jpg" alt="Cup of Coffee">
     <img src="images/girl-in-kayak.jpg" alt="Girl in kayak">
-  </article>
-
-  </div>
   </section>
 
 <!-- Rentals section -->
-  <section>
-    <div class="container-1">
-      <h2>Rentals</h2>
 
-    <div class="rentals-container">
-    <div class="rentals-description">
+  <section class="rentals">
+    <h2>Rentals</h2>
       <p>All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration.</p>
-      <br>
       <p>Please note that we require 24 hours notice for all cancellations and late returns will be charged accordingly.</p>
-      <br>
-    <!-- <div class="booknow"> -->
-      <p>Call <a href="tel:+1604-604-6040"><span style="color:#b64036; text-decoration:underline">604-604-6040</span></a> to book now!</p>
-    </div>
-
-  <!-- </div> -->
-
-
+      <p>Call <a href="tel:+1604-604-6040"><span id="rentals-phone">604-604-6040</span></a> to book now!</p>
+  </section>
 
 <!-- Pricing Table -->
-  <div class="pricing-list">
+
+  <aside class="table">
     <table>
       <thead class="table-headings">
       <tr>
@@ -137,54 +108,38 @@
       </tr>
     </tbody>
   </table>
-</div>
-</div>
-</div>
-  </section>
+</aside>
 
 <!-- Location section -->
-  <section>
-    <div class="container-1">
-
+  <section class="location">
     <h2>location</h2>
-    <div class="location"
-      <p>Come visit us at our location on Cornwall Avenue and Yew Street in Vancouver:</p>
-    </div>
-      <br>
+
+      <p >Come visit us at our location on Cornwall Avenue and Yew Street in Vancouver:</p>
+
 
 <!-- Google map -->
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.2014148051353!2d-123.1571647843109!3d49.27258057933022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486724ac9841e85%3A0x870e9cdab5d0e83b!2sYew+St+%26+Cornwall+Ave%2C+Vancouver%2C+BC!5e0!3m2!1sen!2sca!4v1492650288143" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-  </div>
   </section>
 </main>
 
 <!-- Footer including address, copyright and social media links -->
   <footer>
-
-    <div class="footer">
-
-      <div class="right-side-footer">
-      <div class="copyright">
         <p>©2016 Perfect Paddles Kayak Co.</p>
         <p>Powered by HTML and CSS.</p>
-      </div>
 
       <br>
 
-      <div class="phone">
         <p><a href="tel:+1604-604-6040">604-604-6040.</a>
         <a style="text-decoration:underline" href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a></p>
-      </div>
-    </div>
+
       <br>
 
-      <div class="address">
         <p>Cornwall Avenue & Yew Street</p>
         <p>Vancouver, BC, Canada</p>
-      </div>
+      <!-- </div>
 
-    <div class="social-links">
+    <div class="social-links"> -->
+    <article>
     <nav>
       <ul class="sl">
         <li><i class="fa fa-facebook" aria-hidden="true"></i> <a href="https://facebook.com" target="_blank">Facebook</a></li>
@@ -194,13 +149,10 @@
         <li><i class="fa fa-google-plus" aria-hidden="true"></i> <a href="https://plus.google.com" target="_blank">google+</a></li>
       </ul>
     </nav>
-  </div>
-    </div>
+  </article>
 
 
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="index.js"></script>
   </body>
 </html>

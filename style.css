@@ -1,71 +1,137 @@
 * {
   margin: 0;
   padding: 0;
+  border: 1px solid rgba(0,0,0,0.3);
 }
-
-
-html {
-  max-width: 1140px;
-  margin: 0 auto;
-  font-size: 16px;
-  font-family: 'karlaregular','pacificoregular';
-}
-
 
 @font-face {
     font-family: 'karla';
-    src: url('fonts/karla-regular-webfont.woff2') format('woff2'),
-         url('fonts/karla-regular-webfont.woff') format('woff');
+    src: url("fonts/karla-regular-webfont.woff2") format('woff2'),
+         url("fonts/karla-regular-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'karla';
-    src: url('fonts/karla-bold-webfont.woff2') format('woff2'),
-         url('fonts/karla-bold-webfont.woff') format('woff');
-    font-weight: bold;
+    font-family: 'karlabold';
+    src: url("fonts/karla-bold-webfont.woff2") format('woff2'),
+         url("fonts/karla-bold-webfont.woff") format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'pacifico';
-    src: url('fonts/pacifico-webfont.woff2') format('woff2'),
-         url('fonts/pacifico-webfont.woff') format('woff');
+    src: url("fonts/pacifico-webfont.woff2") format('woff2'),
+         url("fonts/pacifico-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-background: {
-  color: #e8e5e5;
+body {
+  background-color: #d8d7d8;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'karla','pacifico';
+  line-height: 1.5;
+  text-align: left;
 }
 
-header {
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+
+}
+
+a:hover, a:active {
+
+}
+
+.body {
+  margin: 0 auto;
+  max-width: 100%;
+  clear: both;
+}
+
+/*header {
   background-color: black;
   background-size: cover;
   position: fixed;
   margin: 0 auto;
-  display: block;
-  width: 1140px;
-  height: 50px;
+  width: 75%;
+  height: 8%;
+  float: left;
+}*/
+
+header img {
+    width: 50%;
+    display: block;
+    margin-left: 8%;
+    margin-top: 0.5%;
+    padding: 5px 5px;
+    float: left;
+    vertical-align: middle;
 }
 
-.logo {
+header nav {
+  background-color: black;
+  height: 60px;
+  /*position: fixed;
+  width: 75%;*/
+}
+
+/*header nav, header img {
   position: fixed;
-  justify-content: flex-start;
-  padding: 10px;
-  margin-bottom: 100px;
+}*/
+
+header nav ul {
+  list-style: none;
+  margin: 0 auto;
+  float: right;
 }
 
-.navbar{
+header nav ul li {
+  display:inline;
+  float: left;
+}
+
+header nav a:link, header nav a:visited {
+  color: white;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 26px;
+}
+
+header nav a:hover, header nav a:active {
+  background-color: #e2574c;
+  text-shadow: none;
+}
+
+/*.menu {
+  width: 50%;
+  float: right;
+}
+
+.menu ul li {
+  float: right;
+  padding: 15px;
+  display: inline;
+}*/
+
+/*.navbar{
   position: fixed;
   float: right;
   right: 150px;
   padding: 15px;
-}
+}*/
 
 
-.bar {
+/*.bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -88,19 +154,18 @@ header {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-  }
+  }*/
 
-.container {
+
+.banner {
   height: 450px;
   margin: 0px auto;
   text-align: center;
   border: 1px solid deepink;
   background: url("./images/kayak-bkgd.jpg") rgba(0,0,0,0.1) center center no-repeat;
   background-size: cover;
-  line-height: 1.7;
-
+  line-height: 2;
 }
-
 
 .enjoy {
   font-family: 'karla', sans-serif;
@@ -114,18 +179,151 @@ header {
 .outdoors {
   font-family: 'pacifico', sans-serif;
   color: white;
-  font-size: 75px;
+  font-size: 85px;
+  font-weight: normal;
   text-align: center;
 }
 
 .water {
-  font-family: 'pacificoregular', sans-serif;
+  font-family: 'pacifico', sans-serif;
   color: white;
   font-size: 30px;
   text-align: center;
 }
 
-.container-1 {
+button {
+  background-color: #e2574c;
+  color: white;
+  text-transform: uppercase;
+  padding: 11px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: 'karla';
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: inherit;
+  margin-top: 30px;
+  margin-left: 420px;
+  display: block;
+}
+
+ button:hover {
+	box-shadow: 0px 4px 4px rgba(34,62,66,.5);
+	-webkit-transition: box-shadow 1s ease;
+	transition: box-shadow 1s ease;
+}
+
+.mainContent {
+  line-height: 25px;
+  /*overflow: hidden;*/
+  text-align: center;
+  background-color: white;
+}
+
+/*.container {
+  width: 75%;
+  text-align: center;
+}*/
+
+.aboutContent {
+  margin-top: 4%;
+}
+
+.aboutContent p {
+  text-align: center;
+  margin-top: 4%;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 4%;
+}
+
+h2 {
+  font-family: 'pacifico';
+  text-align: center;
+  font-size: 50px;
+  color: gray;
+}
+
+
+.rentals {
+  margin-top: 4%;
+  clear: both;
+}
+
+/*.rentals h2 {
+  width: 100%;
+}*/
+
+.rentals p {
+  float: left;
+  width: 30%;
+  position: relative;
+  text-align: left;
+  font-family: 'karla', sans-serif;
+  line-height: 1.5;
+  margin-top: 2%;
+  padding: 1% 2%;
+}
+
+#rentals-phone {
+  color: #b64036;
+  text-decoration: underline;
+}
+
+.table {
+border: 1px solid #c8c8c8;
+margin-top: 4%;
+margin-left: 5%;
+width: 45%;
+float: right;
+}
+
+.table-headings {
+  text-align: center;
+  background-color: #e6e6e6;
+}
+td{
+  border: 1px solid #c8c8c8;
+}
+th {
+  background-color: #c8c8c8;
+}
+
+thead, tbody {
+  weigth: 40%;
+}
+
+.firstcolumn {
+  text-align: left;
+}
+
+.secondcolumn, .thirdcolumn {
+  text-align: center;
+}
+
+
+.location {
+  font-family: 'karla', sans-serif;
+  line-height: 2.0;
+  text-align: center;
+  clear: both;
+}
+
+/*google map*/
+iframe {
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 95%;
+  height: 250px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+/*.container-1 {
   justify-content: center;
   height: 450px;
   margin: 0 auto;
@@ -154,11 +352,8 @@ header {
   text-align: center;
 
   align-items: flex-start;
-}
+}*/
 
-img {
-  max-width: 100%;
-}
 
 /*.images {
   display: flex;
@@ -167,37 +362,10 @@ img {
 
 
 
-h2 {
-  font-family: 'pacificoregular';
-  text-align: center;
-  font-size: 40px;
-  color: gray;
-}
 
 
-button {
-  background-color: #e2574c;
-  color: white;
-  text-transform: uppercase;
-  padding: 11px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-family: 'karlaregular';
-  color: white;
-  text-align: center;
-  font-size: inherit;
-  margin-top: 30px;
-  margin-left: 500px;
-  display: block;
-}
 
- button:hover {
-	box-shadow: 0px 4px 4px rgba(34,62,66,.5);
-	-webkit-transition: box-shadow 1s ease;
-	transition: box-shadow 1s ease;
-}
-
-@media only screen and (min-width: 300px) {
+/*@media only screen and (min-width: 300px) {
   .table {
     width: 100%;
   }
@@ -208,128 +376,71 @@ button {
 @media only screen and (min-width: 600px) {
   img {max-width: 30%; }
   header { max-width: 100%}
-  body {max-width: 100%}
-  footer {max-width: 100%}
+  .body {width: 75%}
+  footer {width: 75%}
 }
 
 /*desktop*/
 @media only screen and (min-width: 1140px) {
   img {max-width: 30%;}
+  header img {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 18%;
+  }
+  .body {
+    width: 75%;
+  }
+  footer {
+    width: 75%;
+  }
   }
 
 
-/*body div*/
-.container-1 {
-  justify-content: center;
-  height: 450px;
-  margin: 0 auto;
-  text-align: left;
-  background-color: white;
-}
-
-/*Description p in the About section*/
-.about-description {
-  font-family: 'karlaregular', sans-serif;
-  line-height: 2.0;
-  text-align: center;
-}
-
-.rentals-description {
-  text-align: left;
-  font-family: 'karlaregular', sans-serif;
-  line-height: 1.5;
-  width: 50%;
-}
-
 /*table div*/
-.pricing-list {
+/*.pricing-list {
 float: right;
 position: relative;
-}
+}*/
 
-table {
-border: 1px solid #c8c8c8;
-width: 400px;
-}
 
-.table-headings {
-  text-align: center;
-  background-color: #e6e6e6;
-}
-td{
-  border: 1px solid #c8c8c8;
-}
-th {
-  background-color: #c8c8c8;
-}
 
-.firstcolumn {
-  text-align: left;
-}
-
-.secondcolumn {
-  text-align: center;
-}
-
-.thirdcolumn {
-  text-align: center;
-}
-
-.location {
-  font-family: 'karlaregular', sans-serif;
-  line-height: 2.0;
-  text-align: center;
-}
-
-/*google map*/
-iframe {
-  margin: auto;
-  display: block;
-  text-align: center;
-  width: 95%;
-  height: 70%;
-}
-
-a {
+/*a {
 color: white;
 text-decoration: none;
-}
+}*/
 
-.footer {
-  display: flex;
-  flex-direction: column;
+footer {
+  float: left;
   padding: 50px;
-  margin: 10px 10px;
+  margin: auto 0px;
   max-width: 100%;
-  height: 60%;
+  /*height: 60%;*/
   border-color: white;
   background-color: #2b2a2a;
   font-size: inherit;
   font-family: arial;
   color: white;
+  clear: both;
 }
 
-.right-side-footer {
-  justify-content: center;
-}
-
-.copyright {
+footer p {
   color: white;
-  font-family: 'karlaregular', sans-serif;
+  font-family: 'karla', sans-serif;
   line-height: 1.5;
 }
 
-.phone {
+footer p a {
   text-decoration: none;
   color: white;
   display: inline;
-  font-family: 'karlaregular', sans-serif;
+  font-family: 'karla', sans-serif;
   line-height: 1.5;
 }
 
 .address {
   color: darkgray;
-  font-family: 'karlaregular', sans-serif;
+  font-family: 'karla', sans-serif;
   line-height: 1.5;
 }
 
@@ -348,10 +459,4 @@ text-decoration: none;
 i {
   display: inline-block;
   margin-right: 1em;
-}
-
-/*social-links container*/
-.social-links {
-  display: flex;
-  justify-content: flex-end;
 }

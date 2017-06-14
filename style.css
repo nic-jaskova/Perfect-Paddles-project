@@ -1,135 +1,142 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-
-html {
-  max-width: 1140px;
-  margin: 0 auto;
-  font-size: 16px;
-  font-family: 'karlaregular','pacificoregular';
+  border: none;
+  /*border: 1px solid rgba(0,0,0,0.3);*/
 }
 
 
 @font-face {
-    font-family: 'karlaregular';
-    src: url('karla-regular-webfont.woff2') format('woff2'),
-         url('karla-regular-webfont.woff') format('woff');
+    font-family: 'karla';
+    src: url("fonts/karla-regular-webfont.woff2") format('woff2'),
+         url("fonts/karla-regular-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'karlabold';
-    src: url('karla-bold-webfont.woff2') format('woff2'),
-         url('karla-bold-webfont.woff') format('woff');
+    src: url("fonts/karla-bold-webfont.woff2") format('woff2'),
+         url("fonts/karla-bold-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'pacificoregular';
-    src: url('pacifico-webfont.woff2') format('woff2'),
-         url('pacifico-webfont.woff') format('woff');
+    font-family: 'pacifico';
+    src: url("fonts/pacifico-webfont.woff2") format('woff2'),
+         url("fonts/pacifico-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-background: {
-  color: #e8e5e5;
+body {
+  background-color: #d8d7d8;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'karla','pacifico';
+  line-height: 1.5;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.body {
+  margin: 0 auto;
+  max-width: 100%;
+  clear: both;
 }
 
 header {
+  position: fixed;
+  border: 1px solid transparent;
+}
+
+#logo {
+    width: 60%;
+    display: block;
+    margin-left: 20%;
+    margin-top: 2%;
+    padding: 4px 4px;
+    float: left;
+    vertical-align: middle;
+    box-shadow: none;
+}
+
+header nav {
   background-color: black;
-  background-size: cover;
-  position: fixed;
-  margin: 0 auto;
-  display: block;
-  width: 1140px;
-  height: 50px;
-}
-
-.logo {
-  position: fixed;
-  justify-content: flex-start;
+  height: 80px;
   padding: 10px;
-  margin-bottom: 100px;
+  /*position: fixed;*/
+  /*width: 75%;*/
 }
 
-.navbar{
+/*header nav, header img {
   position: fixed;
+}*/
+
+header nav ul {
+  list-style: none;
+  margin: 0 auto;
   float: right;
-  right: 150px;
-  padding: 15px;
 }
 
-
-.bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    top: 50px;
-    right: 50px;
+header nav ul li {
+  display:inline;
+  float: left;
 }
 
-.navheader {
-    display: inline;
-    margin: 5px 5px;
+header nav a:link, header nav a:visited {
+  color: white;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 26px;
 }
 
-.about {
-    display: fixed;
-    font-weight: bold;
-    color: white;
-    font-size: 15px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+header nav a:hover, header nav a:active {
+  background-color: #e2574c;
+  text-shadow: none;
+}
 
-.container {
-  height: 450px;
+.banner {
+  border: 2px solid transparent;
+  height: 550px;
   margin: 0px auto;
   text-align: center;
-  border: 1px solid deepink;
+  display: block;
   background: url("./images/kayak-bkgd.jpg") rgba(0,0,0,0.1) center center no-repeat;
   background-size: cover;
-  line-height: 1.7;
-
+  line-height: 2;
 }
 
-
 .enjoy {
-  font-family: 'karlaregular', sans-serif;
+  font-family: 'karla', sans-serif;
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 23px;
+  margin-top: 40%;
 }
 
 .outdoors {
-  font-family: 'pacificoregular', sans-serif;
+  font-family: 'pacifico', sans-serif;
   color: white;
-  font-size: 75px;
+  font-size: 45px;
+  font-weight: normal;
   text-align: center;
 }
 
 .water {
-  font-family: 'pacificoregular', sans-serif;
+  font-family: 'pacifico', sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-}
-
-.container-1 {
-  justify-content: center;
-  height: 450px;
-  margin: 0 auto;
-  text-align: left;
 }
 
 .container-2 {
@@ -139,41 +146,15 @@ header {
   font-weight: bold;
   justify-content: center;
   vertical-align: middle;
-  line-height: 1.5;
-  width: 450px;
-  height: 25px;
+  line-height: 1.25;
+  width: 75%;
+  font-size: 14px;
+  /*height: 25%;*/
   text-align: center;
   margin: 0 auto;
   padding: 5px;
   background-size: cover;
-
 }
-
-.banner_tittle {
-  display: block;
-  text-align: center;
-
-  align-items: flex-start;
-}
-
-img {
-  max-width: 100%;
-}
-
-.images {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
-h2 {
-  font-family: 'pacificoregular';
-  text-align: center;
-  font-size: 40px;
-  color: gray;
-}
-
 
 button {
   background-color: #e2574c;
@@ -182,12 +163,12 @@ button {
   padding: 11px;
   border-radius: 50px;
   text-decoration: none;
-  font-family: 'karlaregular';
-  color: white;
+  font-family: 'karla';
   text-align: center;
+  /*vertical-align: middle;*/
   font-size: inherit;
-  margin-top: 30px;
-  margin-left: 420px;
+  margin-top: 4%;
+  margin-left: 30%;
   display: block;
 }
 
@@ -197,59 +178,77 @@ button {
 	transition: box-shadow 1s ease;
 }
 
-@media only screen and (min-width: 300px) {
-  .table {
-    width: 100%;
-  }
-}
-
-
-/*tablet*/
-@media only screen and (min-width: 600px) {
-  img {max-width: 30%; }
-  header { max-width: 100%}
-  body {max-width: 100%}
-  footer {max-width: 100%}
-}
-
-/*desktop*/
-@media only screen and (min-width: 1140px) {
-  img {max-width: 30%;}
-  }
-
-
-/*body div*/
-.container-1 {
-  justify-content: center;
-  height: 450px;
-  margin: 0 auto;
-  text-align: left;
-  background-color: white;
-}
-
-/*Description p in the About section*/
-.about-description {
-  font-family: 'karlaregular', sans-serif;
-  line-height: 2.0;
+.mainContent {
+  line-height: 25px;
+  /*overflow: hidden;*/
   text-align: center;
+  background-color: white;
+  border: 2px solid transparent;
 }
 
-.rentals-description {
+/*.container {
+  width: 75%;
+  text-align: center;
+}*/
+
+.aboutContent {
+  margin-top: 12%;
+}
+
+.aboutContent p {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 14px;
+}
+
+img {
+  max-width: 95%;
+  margin-top: 2%;
+  box-shadow: 3px 3px 3px #666;
+}
+
+
+h2 {
+  font-family: 'pacifico';
+  text-align: center;
+  font-size: 50px;
+  color: gray;
+  /*margin: 0;
+  padding: 0;*/
+}
+
+
+.rentals {
+  margin-top: 10%;
+  clear: both;
+}
+
+/*.rentals h2 {
+  width: 100%;
+}*/
+
+.rentals p {
+  /*float: left;*/
+  width: 90%;
+  /*position: relative;*/
   text-align: left;
-  font-family: 'karlaregular', sans-serif;
+  font-family: 'karla', sans-serif;
   line-height: 1.5;
-  width: 50%;
+  margin-top: 10%;
+  padding: 1% 2%;
 }
 
-/*table div*/
-.pricing-list {
-float: right;
-position: relative;
+#rentals-phone {
+  color: #b64036;
+  text-decoration: underline;
 }
 
-table {
+.table {
 border: 1px solid #c8c8c8;
-width: 400px;
+margin-top: 4%;
+margin-left: 5%;
+width: 100%;
+/*float: right;*/
 }
 
 .table-headings {
@@ -263,22 +262,25 @@ th {
   background-color: #c8c8c8;
 }
 
+thead, tbody {
+  weigth: 40%;
+}
+
 .firstcolumn {
   text-align: left;
 }
 
-.secondcolumn {
+.secondcolumn, .thirdcolumn {
   text-align: center;
 }
 
-.thirdcolumn {
-  text-align: center;
-}
 
 .location {
-  font-family: 'karlaregular', sans-serif;
+  font-family: 'karla', sans-serif;
   line-height: 2.0;
   text-align: center;
+  clear: both;
+  padding: 1%;
 }
 
 /*google map*/
@@ -287,71 +289,130 @@ iframe {
   display: block;
   text-align: center;
   width: 95%;
-  height: 70%;
+  height: 250px;
+  margin-top: 2%;
+  margin-bottom: 4%;
 }
 
-a {
-color: white;
-text-decoration: none;
+/*.container-1 {
+  justify-content: center;
+  height: 450px;
+  margin: 0 auto;
+  text-align: left;
 }
+.banner_tittle {
+  display: block;
+  text-align: center;
+  align-items: flex-start;
+}*/
 
-.footer {
+
+/*.images {
   display: flex;
-  flex-direction: column;
-  padding: 50px;
-  margin: 10px 10px;
-  max-width: 100%;
-  height: 60%;
+  justify-content: space-between;
+}*/
+
+
+
+
+
+
+/*@media only screen and (min-width: 300px) {
+  .table {
+    width: 100%;
+  }
+}
+/*tablet*/
+@media only screen and (min-width: 600px) {
+  img {max-width: 30%; }
+  header { max-width: 100%}
+  .body {width: 75%}
+  footer {width: 75%}
+}
+
+/*desktop*/
+@media only screen and (min-width: 1140px) {
+  img {max-width: 30%;}
+  header img {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 18%;
+  }
+  .body {
+    width: 75%;
+  }
+  footer {
+    width: 75%;
+  }
+  }
+
+footer {
+  float: left;
+  padding: 4%;
+  margin: auto 0px;
+  width: 95%;
+  /*height: 60%;*/
   border-color: white;
   background-color: #2b2a2a;
-  font-size: inherit;
+  font-size: 14px;
   font-family: arial;
   color: white;
+  clear: both;
 }
 
-.right-side-footer {
-  justify-content: center;
-}
-
-.copyright {
+footer p {
   color: white;
-  font-family: 'karlaregular', sans-serif;
+  font-family: 'karla', sans-serif;
   line-height: 1.5;
+  text-align: center;
 }
 
-.phone {
+footer p a {
   text-decoration: none;
   color: white;
   display: inline;
-  font-family: 'karlaregular', sans-serif;
-  line-height: 1.5;
+  font-family: 'karla', sans-serif;
+  line-height: 1.5
+  text-align: center;
 }
 
 .address {
   color: darkgray;
-  font-family: 'karlaregular', sans-serif;
+  font-family: 'karla', sans-serif;
   line-height: 1.5;
 }
 
-/*unordered list - social links*/
-.sl {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-  vertical-align: middle;
-  /*overflow: hidden;
-  top: 50px;
-  right: 50px;*/
+footer nav ul {
+  list-style: none;
+  /*margin: 0 auto;*/
+  margin-top: 8%;
+  text-align: center;
+  /*float: right;*/
 }
 
-i {
+footer nav ul li {
+  display:inline;
+  padding-right: 4px;
+  /*float: left;*/
+}
+
+footer nav a:link, footer nav a:visited {
+  color: white;
+  padding: 15px 20px;
+  margin: 0 auto;
+  display: none;
+}
+
+footer nav a:hover, footer nav a:active {
+  background-color: #e2574c;
+  text-shadow: none;
+}
+
+footer i {
+  padding-right: 3px;
+}
+
+/*i {
   display: inline-block;
   margin-right: 1em;
-}
-
-/*social-links container*/
-.social-links {
-  display: flex;
-  justify-content: flex-end;
-}
+}*/

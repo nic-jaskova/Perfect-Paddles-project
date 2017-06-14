@@ -1,7 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
+  /*border: 1px solid rgba(0,0,0,0.3);*/
 }
+
 
 @font-face {
     font-family: 'karla';
@@ -34,11 +37,14 @@ body {
   font-family: 'karla','pacifico';
   line-height: 1.5;
   text-align: left;
+  color: #2d2d2d;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
+
 
 .body {
   margin: 0 auto;
@@ -46,37 +52,30 @@ a {
   clear: both;
 }
 
-/*header {
-  background-color: black;
-  background-size: cover;
+header {
   position: fixed;
-  margin: 0 auto;
-  width: 75%;
-  height: 8%;
-  float: left;
-}*/
+  border: 1px solid transparent;
+}
 
-header img {
+#logo {
     width: 60%;
     display: block;
-    margin-left: 20%;
-    margin-top: 0.5%;
-    padding: 5px 5px;
+    margin-left: 17%;
+    margin-top: 2%;
+    padding: 4px 4px;
     float: left;
     vertical-align: middle;
+    box-shadow: none;
 }
 
 header nav {
   background-color: black;
   height: 80px;
   padding: 10px;
-  /*position: fixed;
-  width: 75%;*/
+  padding-right: 45px;
+  /*position: fixed;*/
+  /*width: 75%;*/
 }
-
-/*header nav, header img {
-  position: fixed;
-}*/
 
 header nav ul {
   list-style: none;
@@ -96,7 +95,7 @@ header nav a:link, header nav a:visited {
   margin: 0 auto;
   text-transform: uppercase;
   font-weight: bold;
-  height: 26px;
+  height: 13px;
 }
 
 header nav a:hover, header nav a:active {
@@ -105,13 +104,14 @@ header nav a:hover, header nav a:active {
 }
 
 .banner {
-  height: 450px;
+  border: 2px solid transparent;
+  height: 650px;
   margin: 0px auto;
   text-align: center;
-  border: 1px solid deepink;
+  display: block;
   background: url("./images/kayak-bkgd.jpg") rgba(0,0,0,0.1) center center no-repeat;
   background-size: cover;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .enjoy {
@@ -120,7 +120,7 @@ header nav a:hover, header nav a:active {
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 50%;
 }
 
 .outdoors {
@@ -129,13 +129,15 @@ header nav a:hover, header nav a:active {
   font-size: 45px;
   font-weight: normal;
   text-align: center;
+  margin-top: 4%;
 }
 
 .water {
   font-family: 'pacifico', sans-serif;
   color: white;
-  font-size: 35px;
+  font-size: 38px;
   text-align: center;
+  margin-top: 4%;
 }
 
 .container-2 {
@@ -143,6 +145,7 @@ header nav a:hover, header nav a:active {
   background-color: black;
   opacity: 0.73;
   font-weight: bold;
+  background-repeat: no-repeat;
   justify-content: center;
   vertical-align: middle;
   line-height: 1.25;
@@ -153,6 +156,7 @@ header nav a:hover, header nav a:active {
   margin: 0 auto;
   padding: 5px;
   background-size: cover;
+  margin-top: 6%;
 }
 
 button {
@@ -166,12 +170,13 @@ button {
   text-align: center;
   /*vertical-align: middle;*/
   font-size: inherit;
-  margin-top: 4%;
-  margin-left: 30%;
+  margin-top: 8%;
+  margin-left: 35%;
   display: block;
 }
 
  button:hover {
+  background-color: #b64036;
 	box-shadow: 0px 4px 4px rgba(34,62,66,.5);
 	-webkit-transition: box-shadow 1s ease;
 	transition: box-shadow 1s ease;
@@ -182,6 +187,7 @@ button {
   /*overflow: hidden;*/
   text-align: center;
   background-color: white;
+  border: 2px solid transparent;
 }
 
 /*.container {
@@ -190,91 +196,122 @@ button {
 }*/
 
 .aboutContent {
-  margin-top: 12%;
+  margin-top: 20%;
 }
 
 .aboutContent p {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 16%;
+  margin-bottom: 6%;
   font-size: 14px;
+  width: 95%;
+  padding: 4%;
 }
 
 img {
-  max-width: 100%;
-  margin-top: 10%;
+  max-width: 95%;
+  margin-top: 2%;
+  box-shadow: 3px 3px 3px #666;
 }
+
 
 h2 {
   font-family: 'pacifico';
   text-align: center;
-  font-size: 50px;
-  color: gray;
+  font-size: 45px;
+  color: #646464;
+  /*margin: 0;
+  padding: 0;*/
 }
 
 
 .rentals {
-  margin-top: 10%;
+  margin-top: 20%;
   clear: both;
 }
 
-/*.rentals h2 {
-  width: 100%;
-}*/
+.rentals h2 {
+  margin-bottom: 16%;
+}
 
 .rentals p {
   /*float: left;*/
-  width: 90%;
+  width: 83%;
+  font-size: 14px;
   /*position: relative;*/
   text-align: left;
   font-family: 'karla', sans-serif;
-  line-height: 1.5;
-  margin-top: 10%;
-  padding: 1% 2%;
+  line-height: 2.0;
+  padding: 2%;
 }
 
 #rentals-phone {
-  color: #b64036;
+  color: #e2574c;
   text-decoration: underline;
 }
 
+#rentals-phone:hover {
+  background-color: #b64036;
+}
+
+table {
+  width: 340px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #c8c8c8;
+  margin-left: 2%;
+  font-size: 14px;
+  font-family: 'karla', sans-serif;
+}
+
+table:hover {
+  border-color: #fbf6d9;
+}
+
 .table {
-border: 1px solid #c8c8c8;
+/*border: 1px solid #c8c8c8;*/
 margin-top: 4%;
-margin-left: 5%;
-width: 100%;
 /*float: right;*/
 }
 
-.table-headings {
-  text-align: center;
-  background-color: #e6e6e6;
-}
-td{
+td, th {
   border: 1px solid #c8c8c8;
 }
-th {
-  background-color: #c8c8c8;
-}
 
-thead, tbody {
-  weigth: 40%;
+th {
+  background: #e6e6e6;
+  padding: 3%;
+  font-weight: bold;
 }
 
 .firstcolumn {
   text-align: left;
+  font-size: 14px;
+  font-family: 'karla', sans-serif;
+  padding: 1%;
+  border: 1px solid #c8c8c8;
 }
 
 .secondcolumn, .thirdcolumn {
   text-align: center;
+  font-size: 14px;
+  font-family: 'karla', sans-serif;
+  border: 1px solid #c8c8c8;
 }
 
+.location h2 {
+  margin-top: 20%;
+}
 
-.location {
+.location p {
   font-family: 'karla', sans-serif;
   line-height: 2.0;
+  font-size: 14px;
+  margin-top: 16%;
   text-align: center;
   clear: both;
-  padding: 1%;
+  padding: 3%;
+
 }
 
 /*google map*/
@@ -283,44 +320,10 @@ iframe {
   display: block;
   text-align: center;
   width: 95%;
-  height: 250px;
+  height: 200px;
   margin-top: 2%;
-  margin-bottom: 4%;
+  margin-bottom: 16%;
 }
-
-/*.container-1 {
-  justify-content: center;
-  height: 450px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-
-
-.banner_tittle {
-  display: block;
-  text-align: center;
-
-  align-items: flex-start;
-}*/
-
-
-/*.images {
-  display: flex;
-  justify-content: space-between;
-}*/
-
-
-
-
-
-
-/*@media only screen and (min-width: 300px) {
-  .table {
-    width: 100%;
-  }
-}
-
 
 /*tablet*/
 @media only screen and (min-width: 600px) {
@@ -346,18 +349,21 @@ iframe {
   }
   }
 
+/*footer*/
 footer {
   float: left;
   padding: 4%;
   margin: auto 0px;
   width: 95%;
+  height: 300px;
   /*height: 60%;*/
   border-color: white;
   background-color: #2b2a2a;
-  font-size: 14px;
-  font-family: arial;
-  color: white;
   clear: both;
+}
+
+footer section {
+  margin-top: 12%;
 }
 
 footer p {
@@ -365,6 +371,7 @@ footer p {
   font-family: 'karla', sans-serif;
   line-height: 1.5;
   text-align: center;
+  font-size: 14px;
 }
 
 footer p a {
@@ -410,6 +417,7 @@ footer nav a:hover, footer nav a:active {
 
 footer i {
   padding-right: 3px;
+  color: white;
 }
 
 /*i {

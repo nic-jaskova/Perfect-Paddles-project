@@ -38,6 +38,7 @@ body {
   line-height: 1.5;
   text-align: left;
   color: #2d2d2d;
+  max-width: 100%;
 }
 
 a {
@@ -327,10 +328,108 @@ iframe {
 
 /*tablet*/
 @media only screen and (min-width: 600px) {
-  img {max-width: 30%; }
-  header { max-width: 100%}
-  .body {width: 75%}
-  footer {width: 75%}
+  header { width: 75%;}
+  #logo {
+      /*width: 60%;
+      display: block;*/
+      margin-left: 2%;
+      margin-bottom: 3%;
+      padding: 0;
+  }
+  header nav {
+    /*background-color: black;*/
+    height: 40px;
+    padding: 5px 5px;
+    padding-right: 0;
+  }
+  /*header nav ul {
+    margin-bottom: 6%;
+  }
+  header nav ul li {
+    display:inline;
+  }*/
+  header nav a:link, header nav a:visited {height: 15px;}
+  .banner {
+    height: 450px;
+  }
+
+  .enjoy {
+    font-size: 20px;
+    margin-top: 14%;
+  }
+
+  .outdoors {
+    font-size: 65px;
+    margin-top: 3%;
+  }
+
+  .water {
+    font-size: 35px;
+    margin-top: 1%;
+  }
+  .container-2 {
+    margin-top: 4%;
+  }
+
+  button {
+    margin-top: 4%;
+    margin-left: 40%;
+  }
+  .aboutContent {
+    margin-top: 8%;
+  }
+
+  .aboutContent p {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    padding-right: 2%;
+    /*width: 95%;
+    padding: 4%;*/
+  }
+
+  img {
+    max-width: 31%;
+    padding: 0px 2px;
+    margin-top: 1%;
+    /*box-shadow: 3px 3px 3px #666;*/
+  }
+  .rentals {
+    margin-top: 6%;
+  }
+  .rentals h2 {
+    margin-bottom: 6%;
+  }
+
+  .rentals p {
+    float: left;
+    width: 50%;
+    /*font-size: 14px;*/
+    /*position: relative;*/
+    padding: 2%;
+  }
+
+  table {
+    width: 270px;
+    margin-left: 2%;
+    position: absolute;
+  }
+  .table {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4%;
+  }
+  .location h2 {
+    margin-top: 24%;
+    clear: both;
+  }
+  .location p {
+    margin-top: 10%;
+    clear: both;
+    padding: 3%;
+
+  }
+  .body {width: 75%;}
+  footer {width: 75%;}
 }
 
 /*desktop*/

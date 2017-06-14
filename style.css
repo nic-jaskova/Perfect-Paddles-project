@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid rgba(0,0,0,0.3);
 }
 
 @font-face {
@@ -135,7 +134,7 @@ header nav a:hover, header nav a:active {
 .water {
   font-family: 'pacifico', sans-serif;
   color: white;
-  font-size: 45px;
+  font-size: 35px;
   text-align: center;
 }
 

@@ -418,9 +418,11 @@ footer i {
   header { width: 75%;}
 
   #logo {
-      margin-left: 2%;
-      margin-bottom: 3%;
-      padding: 0;
+    padding: 0;
+    margin: 0;
+    margin-left: 3%;
+    padding-top: 8px;
+    width: 25%;
   }
 
   header nav {
@@ -436,7 +438,7 @@ footer i {
 
   .enjoy {
     font-size: 20px;
-    margin-top: 14%;
+    margin-top: 10%;
   }
 
   .outdoors {
@@ -451,6 +453,7 @@ footer i {
 
   .container-2 {
     margin-top: 4%;
+    width: 60%;
   }
 
   button {
@@ -592,8 +595,11 @@ footer i {
   header { width: 75%;}
 
   #logo {
-      margin-left: 2%;
-      margin-bottom: 0%;
+      padding: 0;
+      margin: 0;
+      margin-left: 3%;
+      padding-top: 8px;
+      width: 23%;
   }
 
   header nav {

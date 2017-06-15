@@ -578,49 +578,59 @@ footer i {
 }
 }
 
+/*iPad*/
+@media only screen and (max-width: 768px) {
+  table {
+    width: 95%;
+    margin-left: 0%;
+  }
+}
+
+
 /*desktop*/
 @media only screen and (min-width: 1140px) {
   header { width: 75%;}
 
   #logo {
       margin-left: 2%;
-      margin-bottom: 3%;
-      padding: 0;
+      margin-bottom: 0%;
   }
 
   header nav {
     height: 40px;
-    padding: 5px 5px;
+    padding: 10px 10px;
     padding-right: 0;
   }
 
   header nav a:link, header nav a:visited {height: 15px;}
   .banner {
-    height: 450px;
+    height: 600px;
   }
 
   .enjoy {
     font-size: 20px;
-    margin-top: 14%;
+    margin-top: 8%;
   }
 
   .outdoors {
-    font-size: 65px;
-    margin-top: 3%;
+    font-size: 85px;
+    margin-top: 1%;
   }
 
   .water {
-    font-size: 35px;
+    font-size: 45px;
     margin-top: 1%;
   }
 
   .container-2 {
     margin-top: 4%;
+    width: 55%;
+    font-size: 19px;
   }
 
   button {
     margin-top: 4%;
-    margin-left: 40%;
+    margin-left: 45%;
   }
   .body {width: 75%;}
 
@@ -629,9 +639,12 @@ footer i {
   }
 
   .aboutContent p {
-    margin-top: 4%;
-    margin-bottom: 2%;
-    padding-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding-left: 20%;
+    width: 55%;
+
+
   }
 
   img {
@@ -650,12 +663,12 @@ footer i {
 
   .rentals p {
     float: left;
-    width: 46.5%;
-    padding: 2%;
+    width: 50%;
+    padding: 1%;
   }
 
   table {
-    max-width: 100%;
+    width: 450px;
     height: 220px;
     margin-right: 2%;
   }
@@ -666,7 +679,7 @@ footer i {
   }
 
   .location h2 {
-    margin-top: 18%;
+    margin-top: 8%;
     clear: none;
   }
   .location p {

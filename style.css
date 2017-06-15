@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   border: none;
-  /*border: 1px solid rgba(0,0,0,0.3);*/
 }
 
 
@@ -74,8 +73,6 @@ header nav {
   height: 80px;
   padding: 10px;
   padding-right: 45px;
-  /*position: fixed;*/
-  /*width: 75%;*/
 }
 
 header nav ul {
@@ -152,7 +149,6 @@ header nav a:hover, header nav a:active {
   line-height: 1.25;
   width: 75%;
   font-size: 14px;
-  /*height: 25%;*/
   text-align: center;
   margin: 0 auto;
   padding: 5px;
@@ -169,7 +165,6 @@ button {
   text-decoration: none;
   font-family: 'karla';
   text-align: center;
-  /*vertical-align: middle;*/
   font-size: inherit;
   margin-top: 8%;
   margin-left: 35%;
@@ -185,16 +180,10 @@ button {
 
 .mainContent {
   line-height: 25px;
-  /*overflow: hidden;*/
   text-align: center;
   background-color: white;
   border: 2px solid transparent;
 }
-
-/*.container {
-  width: 75%;
-  text-align: center;
-}*/
 
 .aboutContent {
   margin-top: 20%;
@@ -216,16 +205,12 @@ img {
   box-shadow: 3px 3px 3px #666;
 }
 
-
 h2 {
   font-family: 'pacifico';
   text-align: center;
   font-size: 45px;
   color: #646464;
-  /*margin: 0;
-  padding: 0;*/
 }
-
 
 .rentals {
   margin-top: 20%;
@@ -237,10 +222,8 @@ h2 {
 }
 
 .rentals p {
-  /*float: left;*/
   width: 83%;
   font-size: 14px;
-  /*position: relative;*/
   text-align: left;
   font-family: 'karla', sans-serif;
   line-height: 2.0;
@@ -332,7 +315,6 @@ footer {
   margin: auto 0px;
   width: 95%;
   height: 300px;
-  /*height: 60%;*/
   border-color: white;
   background-color: #2b2a2a;
   clear: both;
@@ -351,12 +333,15 @@ footer p {
 }
 
 footer p a {
-  text-decoration: none;
   color: white;
   display: inline;
   font-family: 'karla', sans-serif;
   line-height: 1.5;
   text-align: center;
+}
+
+.mailto {
+  text-decoration: underline;
 }
 
 .address {
@@ -367,16 +352,13 @@ footer p a {
 
 footer nav ul {
   list-style: none;
-  /*margin: 0 auto;*/
   margin-top: 8%;
   text-align: center;
-  /*float: right;*/
 }
 
 footer nav ul li {
   display:inline;
   padding-right: 4px;
-  /*float: left;*/
 }
 
 footer nav a:link, footer nav a:visited {
@@ -649,8 +631,6 @@ footer i {
     margin-bottom: 1%;
     padding-left: 20%;
     width: 55%;
-
-
   }
 
   img {
